@@ -35,11 +35,11 @@ class CustomCar(car.Car):
         """
         car.Car.__init__(self)
         self.tires = tires
-        tire = CustomTire(tires)
 
         if self.tires is None:
             self.tires = []
             while len(self.tires) < 4:
+                tire = CustomTire(tires)
                 self.tires.append(tire)
 
 
